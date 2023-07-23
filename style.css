@@ -1,0 +1,28 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Thanh header */
+.header{
+    height: 84px;
+    width: 100vw;
+    background-color: bisque;
+}
+.header div.logo{
+    max-width: 350px;
+    /* height: 100%; */
+}
+.header img
+{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+}
+/* Menu trong header */
