@@ -4,6 +4,17 @@
     margin: 0;
     border: none;
 }
+/* Font */
+/* @font-face {
+    font-family: My Font;
+    src: url(fonts/UTM\ DuepuntozeroBold.ttf);
+}
+*{
+    font-family: My Font;
+} */
+body{
+    background-image: url(img/default-bg.jpg);
+}
 .flex{
     display: flex;
     justify-content: space-between;
@@ -25,7 +36,7 @@ header{
 }
 .header div.logo{
     max-width: 350px;
-    /* height: 100%; */
+    height: 100%;
 }
 .header img
 {
@@ -38,6 +49,8 @@ header{
     list-style-type: none;
     text-decoration: none;
 }
+
+
 /* Menu top */
 .nav-top-menu{
     float: right;
@@ -53,10 +66,11 @@ header{
     margin-right: 0;
 }
 .nav-top-menu a{
-    padding: 15px 5px;
+    text-align: center; 
     display: block;
+    font-weight: 700;
     color: black;
-    text-align: center;
+    padding: 15px 5px;
 }
 .nav-top-menu li:hover a{
     color:#064ee7;
@@ -70,28 +84,36 @@ header{
 .nav-top-menu i:last-child{
     margin-left: 0;
 }
-/* Menu bottom*/
-.nav-bottom-menu{
-    position: relative;
-    margin-top: 33px;
-}
-.nav-bottom-menu li{
+
+/* Main */
+.heading{
+    width: 100vw;
     display: inline;
 }
-.nav-bottom-menu ul{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.nav-bottom-menu a{
-    color: #000000;
-    padding: 20px;
-    font-size: large;
-    font-weight: bold;
+.heading > h1{
+    text-transform: uppercase;
     text-align: center;
 }
-.nav-bottom-menu li:hover a{
-    background-color: #46c0fd;
-    color: #ffff;
-    border-radius: 15px;
+/* Form đăng ký */
+
+/* .description p{
+    text-align: center;
 }
+.info{
+    margin-left: 50px;
+    height: 80vh;
+    width: 80vw;
+}
+.info .required{
+    text-transform:inherit;
+    color: red;
+}
+.selection{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(124, 124, 124);
+    border-radius: 5px;
+}
+.selection select{
+    font-size: large;
+} */

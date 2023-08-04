@@ -1,0 +1,212 @@
+/* Set font website */
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); */
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    /* font-family: 'Josefin Sans', sans-serif; */
+}   
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Thanh header */
+/* CSS thẻ header */
+header{
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(210,210,210,1) 0%, rgba(255,255,255,1) 100%);
+    height: auto;
+}
+.header{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 80px 20px;
+    border-bottom: 1px solid black;
+}
+.header div.logo{
+    max-width: 350px;
+}
+.logo img
+{
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+/* Menu trong header */
+.header li, .header a{
+    list-style-type: none;
+    text-decoration: none;
+}
+/* Menu top (Trợ giúp, Đăng nhập, Đăng ký)*/
+.nav-top-menu{
+    float: right;
+}
+.nav-top-menu li{
+    border-right: 2px solid white;
+    margin-right: 7px;
+    padding-right: 5px;
+}
+.nav-top-menu li:last-child, 
+.nav-top-menu li:nth-last-child(2){
+    border-right: none;
+    margin-right: 0;
+}
+.nav-top-menu a{
+    text-align: center; 
+    display: block;
+    font-weight: 700;
+    color: black;
+    padding: 15px 5px;
+}
+.nav-top-menu li:hover a{
+    color:#064ee7;
+}
+.nav-top-menu i{
+    color: #ffff;
+    border-radius: 50%;
+    background-color: #4E4FEB;
+    padding: 10px;
+}
+.nav-top-menu i:last-child{
+    margin-left: 0;
+}
+/* Menu bottom */
+.nav-bottom-menu{
+    position: relative;
+    margin-top: 30px;
+}
+.nav-bottom-menu li > a{
+    font-size: 18px;
+}
+.nav-bottom-menu li{
+    display: inline;
+}
+.nav-bottom-menu ul{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.nav-bottom-menu li > a{
+    color: #000000;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-bottom-menu li:hover > a{
+    background-color: #46c0fd;
+    color: #ffff;
+    border-radius: 15px;
+}
+/* Menu drop-down */
+.menu-dropdown{
+    position: absolute;
+    top: 40px;
+    z-index: 9999;
+}
+.menu-dropdown .content{
+    background-color: white;
+    display: flex;
+    display: none;
+}
+.menu-dropdown > .content a{
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    border-bottom: 1px solid #676767;   
+}
+.menu-dropdown > .content a > h3{
+    color: #08318a;
+}
+.menu-dropdown  div.content > div{
+    width: 25%;
+    margin-left: 20px;
+}
+.nav-bottom-menu li > a:hover + .menu-dropdown .content{
+    display: block;
+    position: fixed;
+    display: flex;
+    left: 0;
+    width: 100vw;
+    border-top: 3px #00558f solid;
+}
+/* Thanh Search chuyến bay */
+.search{
+    width: 841px;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 150px;
+}
+.search > .flex > div{
+    /* min-width: 100px; */
+    /* max-height: 50px; */
+    width: 210px;
+    border-right: 1.5px solid white;
+}
+.search > .flex > div:last-child{
+    border-right: none;
+}
+.search a{
+    background-color: #6161fc;
+    color: #000000;
+    margin: auto 0 ;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 15px 25px;
+}
+.search .flex span{
+    max-height: 52px;
+
+}
+.search > nav > div:hover a{
+    background-color: #46c0fd;
+    color: #ffff;
+}
+/* Mua vé */
+.buy-ticket div.input > input{
+    width: 100%;
+    height: 25px;
+    border: 1px solid #46c0fd;
+    border-radius: 10px;
+}
+.buy-ticket .overflow{
+    height: 100px;
+    width: 150%;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+/* Phần footer */
+/* Contact with social */
+.contact-social{
+    width: 20%;
+    /* background-color: #46c0fd; */
+}
+.contact-social div{
+    width: 30px;
+    height: 30px;
+}
+.contact-social img{
+    width: 100%;
+}
+
+
+
+footer{
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+}

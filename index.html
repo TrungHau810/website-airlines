@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Airlines</title>
     <link rel="shortcut icon" href="/img/Favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Thanh header chứa logo, menu -->
     <header>
@@ -15,7 +17,7 @@
             <div class="flex">
                 <!-- Logo web -> Trang chủ -->
                 <div class="logo">
-                   <a href="#"><img src="img/imgLogo.png" alt="Ảnh logo hãng"></a>
+                    <a href="#"><img src="img/imgLogo.png" alt="Ảnh logo hãng"></a>
                 </div>
                 <!-- Navigition top -->
                 <div class="nav-top-menu">
@@ -24,26 +26,107 @@
                             <i class="fa-regular fa-user"></i>
                             <li><a href="#">Trợ giúp</a></li>
                             <li><a href="#">Đăng nhập</a></li>
-                            <li><a href="#">Đăng ký</a></li>
+                            <li><a href="signup.html">Đăng ký</a></li>
                             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                         </ul>
-                    </nav>    
+                    </nav>
                 </div>
             </div>
             <!-- Navigation bottom -->
-            <nav class="nav-bottom-menu">
+            <div class="nav-bottom-menu">
                 <ul>
-                    <li><a href="#">Ưu đãi</a></li>
+                    <li>
+                        <a href="#">Ưu đãi</a>
+                        <div class="menu-dropdown">
+                            <div class="content content-1">
+                                <div>
+                                    <a href="#">
+                                        <h3>Chương trình ưu đãi</h3>
+                                    </a>
+                                    <a href="#">Đặt vé vào Thứ 5</a>
+                                    <a href="#">Đặt vé vào cuối tuần</a>
+                                    <a href="#">Tất cả ưu đãi</a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>Theo chuyến bay</h3>
+                                    </a>
+                                    <a href="#">TP.Hồ Chí Minh <i class="fa-solid fa-arrow-right"></i> Hà Nội</a>
+                                    <a href="#">Hà Nội <i class="fa-solid fa-arrow-right"></i> TP.Hồ Chí Minh</a>
+                                    <a href="#">TP.Hồ Chí Minh <i class="fa-solid fa-arrow-right"></i> Đà Nẵng</a>
+                                    <a href="#">TP.Hồ Chí Minh <i class="fa-solid fa-arrow-right"></i> Phú Quốc</a>
+                                    <a href="#">Tất cả chuyến bay</a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>Theo Thành phố</h3>
+                                    </a>
+                                    <a href="#">Hồ Chí Minh</a>
+                                    <a href="#">Hà Nội</a>
+                                    <a href="#">Đà Nẵng</a>
+                                    <a href="#">Huế</a>
+                                    <a href="#">Phú Quốc</a>
+                                    <a href="#">Nha Trang</a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <h3>Theo quốc gia</h3>
+                                    </a>
+                                    <a href="#">Chuyến bay đến Thái Lan</a>
+                                    <a href="#">Chuyến bay đến Hàn Quốc</a>
+                                    <a href="#">Chuyến bay đến Nhật Bản</a>
+                                    <a href="#">Chuyến bay đến Úc</a>
+                                    <a href="#">Chuyến bay đến Singapore</a>
+                                    <a href="#">Tất cả các chuyến bay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="#">Lên kế hoạch</a></li>
                     <li><a href="#">Thông tin hành trình</a></li>
                     <li><a href="#">Về chúng tôi</a></li>
                 </ul>
-            </nav>
-        </div>    
+            </div>
+        </div>
     </header>
     <!-- Bảng tra cứu chuyến bay -->
     <div class="search">
+        <nav class="flex">
+            <div><a href="#"><span><i class="fa-solid fa-ticket-simple"></i> Mua vé</span></a></div>
+            <div><a href="#"><span><i class="fa-solid fa-plane-departure"></i> Quản lý đặt chỗ</span></a></div>
+            <div><a href="#"><span>Làm thủ tục</span></a></div>
+            <div><a href="#"><span>Tra cứu chuyến</span></a></div>
+        </nav>
+        <div class="buy-ticket flex">
+            <div class="from-place">
+                <span>Từ</span>
+                <div class="input">
+                    <input type="text" multiple="">
+                </div>
+                <div class="overflow">
+                    <a href="#">TP. Hồ Chí Minh <span>SGN</span></a>
+                    <a href="#">Hà Nội <span>HAN</span></a>
+                    <a href="#">Huế <span>HUI</span></a>
+                    <a href="#">Nha Trang <span>CXR</span></a>
+                    <a href="#">Vinh <span>VII</span></a>
+                </div>
+            </div>
+            <div class="to-place">
 
+            </div>
+            <div class="find-icon">
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
     </div>
     <!-- Silde quảng cáo -->
     <nav class="ads">
@@ -73,7 +156,21 @@
     </div>
     <!-- Footer -->
     <footer>
-
+        <div class="contact-social flex">
+            <div class="facebook">
+                <a href="#"><img src="img/logo-fb.png" alt=""></a>
+            </div>
+            <div class="instagram">
+                <a href="#"><img src="img/logo-instagram.png" alt=""></a>
+            </div>
+            <div class="twitter">
+                <a href="#"><img src="img/logo-twitter.png" alt=""></a>
+            </div>
+            <div class="github">
+                <a href="#"><img src="img/logo-github.svg" alt=""></a>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
